@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Permitir Copiar e Colar Uninter",
+  "version": "1.0",
+  "description": "Remove bloqueios de copiar, colar e menu de contexto no Univirtus.",
+  "content_scripts": [
+    {
+      "matches": ["https://univirtus.uninter.com/ava/web/*"],
+      "js": ["liberar-copiar-colar.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": []
+}
